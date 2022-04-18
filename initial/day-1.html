@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="day-1.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Day-1</title>
+  </head>
+  <body>
+    <div id="app">
+      <p v-if="message==true">----{{input}}----</p>
+      <input v-model.number="input" type="text" />
+      <button v-on:click="showMassage">submit</button>
+    </div>
+
+    <script src="day-1.js"></script>
+  </body>
+</html>
